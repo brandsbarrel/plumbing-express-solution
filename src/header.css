@@ -1,0 +1,33 @@
+:root {
+  --header-height: 84px;
+  scroll-padding-top: calc(var(--header-height) + 12px);
+}
+
+body {
+  padding-top: var(--header-height);
+}
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: var(--header-height);
+  box-shadow: 0 2px 12px #0827760d;
+}
+
+.header-inner {
+  height: var(--header-height);
+}
+
+.skip-link {
+  z-index: 101;
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  :root { --header-height: 76px; }
+}
+
+@media (max-width: 760px) {
+  :root { --header-height: 72px; }
+  .navigation { top: 100%; }
+}

@@ -1,18 +1,23 @@
-# React + Vite
+# Plumbing Express Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite Home page built from the supplied desktop and mobile designs. All React components use the `.js` extension; the Vite configuration enables JSX in those files.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+On Windows PowerShell with script execution disabled, use `npm.cmd` instead of `npm`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm run build
+npm run preview
+```
 
-## Expanding the ESLint configuration
+The Home page is split into reusable components under `src/components/`. Business details and service content are in `src/data.js`. Original imagery is extracted from the supplied design files into `public/assets/`; `scripts/prepare-assets.py` documents those crops.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# plumbing-express-solution" 
-"# plumbing-express-solution" 
+All eight service cards link to their corresponding `/services/:id` page. These pages share a reusable React component, with a Services index at `/services`. The Contact Us link returns to the Home page footer; a separate Contact Us page is pending its design. Production hosting must rewrite application URLs to `index.html` for direct service page visits (Vite dev and preview servers do this automatically).
+
+The hero and footer preserve the supplied flattened artwork as uninterrupted responsive images, with accessible headings and correctly positioned telephone, booking and email links. Text in those two artworks is part of the supplied images. The remaining sections use editable React content. The footer follows the standalone footer reference, without a contact form.

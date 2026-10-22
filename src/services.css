@@ -1,0 +1,22 @@
+.services-grid{grid-template-columns:repeat(8,minmax(0,1fr))}
+.service-taps{display:block}
+.service-card{display:block;border:1px solid transparent;cursor:pointer;transition:border-color .18s,box-shadow .18s,transform .18s}
+.service-card:hover{border-color:#f5008659;box-shadow:0 5px 20px #0058d91a;transform:translateY(-3px)}
+.service-card:focus-visible{outline:3px solid #0058d9;outline-offset:3px}
+.service-card-action{display:flex;justify-content:center;align-items:center;gap:6px;color:#0058d9;font-size:12px;font-weight:700;margin-top:12px}
+.service-card-action>span{font-size:17px}
+.service-detail{padding-top:30px;padding-bottom:60px;background:linear-gradient(120deg,#f2faff,#fff)}
+.service-breadcrumb{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;color:#62677e;margin-bottom:38px}
+.service-breadcrumb a{color:#0058d9}
+.service-breadcrumb a:hover{text-decoration:underline}
+.service-detail-content{display:flex;gap:32px;align-items:flex-start;max-width:1000px;margin:auto}
+.service-detail-icon{width:140px;height:140px;border-radius:50%;flex-shrink:0}
+.service-detail-eyebrow{font-size:13px;text-transform:uppercase;font-weight:750;letter-spacing:1.5px;color:#0058d9;margin:5px 0 12px}
+.service-detail h1{font-size:clamp(32px,4.6vw,56px);line-height:1.1;letter-spacing:-1.5px}
+.service-detail-description{font-size:21px;color:#62677e;margin-top:20px;line-height:1.5}
+.service-detail-enquiry{font-size:16px;color:#62677e;max-width:650px;line-height:1.65;margin-top:12px}
+.service-detail-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:27px}
+.services-index{padding-top:24px;padding-bottom:30px;background:#f8fcff}
+@media(min-width:761px) and (max-width:1050px){.services-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-card,.service-taps{display:flex}.service-card-action{justify-content:flex-start;font-size:11px;margin-top:8px}.service-detail{padding-top:22px;padding-bottom:35px}.service-breadcrumb{margin-bottom:25px;font-size:12px}.service-detail-content{display:block}.service-detail-icon{width:90px;height:90px;margin-bottom:18px}.service-detail-description{font-size:18px}.service-detail-actions{flex-direction:column;align-items:stretch}.service-detail-actions .book-button{font-size:15px;padding:15px;gap:10px}.service-detail-enquiry{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.service-card{transition:none}.service-card:hover{transform:none}}

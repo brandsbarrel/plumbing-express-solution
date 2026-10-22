@@ -1,0 +1,18 @@
+/* Preserve the supplied flattened artwork without joins, masks or stretched crops. */
+.design-hero{position:relative;width:100%;background:#f4fbff;isolation:isolate}
+.design-hero picture,.design-hero-art{display:block;width:100%;height:auto}
+.artwork-link{position:absolute;display:block;border:0;border-radius:8px;background:transparent}
+.artwork-link:focus-visible{outline:3px solid #ff008b;outline-offset:3px;background:#ffffff1a}
+.hero-call-link{left:7.8%;top:65.3%;width:18.7%;height:12.8%}
+.hero-book-link{left:27.8%;top:65.3%;width:16.8%;height:12.8%}
+.hero-email-link{left:8%;top:81.5%;width:31%;height:5.6%}
+.design-footer{background:#06266a;width:100%;scroll-margin-top:0}
+.footer-artwork{position:relative;width:100%;max-width:941px;margin-inline:auto}
+.footer-artwork>img{display:block;width:100%;height:auto}
+.footer-phone-link{left:11.5%;top:38.5%;width:51%;height:5.3%}
+.footer-email-link{left:11.5%;top:44.4%;width:80%;height:4.4%}
+@media(max-width:760px){
+  .hero-call-link{left:13.1%;top:73.8%;width:73.8%;height:7.8%;border-radius:17px}
+  .hero-book-link{left:13.1%;top:82.4%;width:73.8%;height:6.8%;border-radius:17px}
+  .hero-email-link{left:20.8%;top:90.4%;width:72%;height:3.2%}
+}

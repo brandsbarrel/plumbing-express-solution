@@ -1,0 +1,6 @@
+import Icon from './Icon.js';
+import { business } from '../data.js';
+
+export default function DiscountBanner() {
+  return <section className="discount section-wrap" aria-label="10 percent discount offer"><div className="discount-desktop"><Icon name="tag" className="discount-tag" /><div className="discount-title"><p>Mention this to your<br />professional plumber for your</p><h2>10% DISCOUNT</h2></div><div className="offer-feature"><Icon name="clock" /><span>Limited<br />Time Offer</span></div><div className="offer-feature"><Icon name="handshake" /><span>Professional<br />Service</span></div><div className="offer-feature"><Icon name="thumb" /><span>Save on<br />Your Next Service</span></div></div><div className="discount-mobile"><img src="/assets/discount-mobile.webp" alt="Mention this voucher to your professional plumber for a 10% discount. Limited time offer, professional service, save on your next service." width="1122" height="1402" loading="lazy" /><a className="discount-book-hotspot" href="#contact" aria-label="Book a service and mention your 10 percent discount" /><a className="discount-call-hotspot" href={business.phoneHref} aria-label={`Call ${business.phone}`} /></div></section>;
+}
