@@ -1,0 +1,8 @@
+.trust-banner{padding-top:14px;padding-bottom:0}
+.trust-banner img{display:block;width:100%;height:auto}
+.discount-voucher{padding-top:12px;padding-bottom:24px}
+.discount-voucher-artwork{position:relative;max-width:780px;margin-inline:auto}
+.discount-voucher-artwork>img{width:100%;height:auto;display:block}
+.voucher-book-link{left:4.2%;top:84%;width:51.8%;height:10%}
+.voucher-call-link{left:57.4%;top:84%;width:38.7%;height:10%}
+@media(max-width:760px){.trust-banner{padding:0 3.5%}.discount-voucher{padding:0 0 18px}}

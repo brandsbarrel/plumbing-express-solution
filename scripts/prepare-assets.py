@@ -15,7 +15,8 @@ def save(name, filename, box=None):
 save('logo', 'logo.jpeg', (235, 185, 1835, 515))
 save('hero-desktop-complete', 'WhatsApp Image 2026-10-20 at 2.01.03 PM.jpeg', (0, 71, 1138, 531))
 save('hero-mobile-complete', 'home page mobile design.jpeg')
-save('discount-mobile', 'discount section.jpeg')
+save('trust-banner', 'below hero .jpeg', (0, 155, 2048, 562))
+save('discount-voucher', 'discount section.jpeg')
 save('footer-complete', 'footer.jpeg')
 
 service_ids = ['installations', 'maintenance', 'repairs', 'leaks', 'gas', 'hot-water', 'drains', 'taps']
