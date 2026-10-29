@@ -28,6 +28,13 @@ for index, name in enumerate(service_ids):
 for name, x, y in [('response', 29, 228), ('licensed', 524, 228), ('pricing', 29, 546), ('quality', 524, 546)]:
     save(f'benefit-{name}', 'why choose us section.jpeg', (x + 180, y, x + 471, y + 293))
     save(f'icon-{name}', 'why choose us section.jpeg', (x + 24, y + 8, x + 134, y + 116))
+for name, box in [
+    ('bathroom', (27, 501, 297, 910)),
+    ('drainage', (318, 501, 586, 910)),
+    ('shower', (606, 501, 875, 910)),
+]:
+    save(f'project-{name}', 'service page top.jpeg', box)
+
 for name, filename, photo_box, avatar_box in [
     ('jayden', 'review 1.jpeg', (0, 27, 733, 390), (34, 753, 168, 887)),
     ('suhanya', 'review 2.jpeg', (18, 14, 1010, 474), (83, 1295, 273, 1485)),
