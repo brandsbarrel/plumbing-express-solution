@@ -28,4 +28,12 @@ for index, name in enumerate(service_ids):
 for name, x, y in [('response', 29, 228), ('licensed', 524, 228), ('pricing', 29, 546), ('quality', 524, 546)]:
     save(f'benefit-{name}', 'why choose us section.jpeg', (x + 180, y, x + 471, y + 293))
     save(f'icon-{name}', 'why choose us section.jpeg', (x + 24, y + 8, x + 134, y + 116))
+for name, filename, photo_box, avatar_box in [
+    ('jayden', 'review 1.jpeg', (0, 27, 733, 390), (34, 753, 168, 887)),
+    ('suhanya', 'review 2.jpeg', (18, 14, 1010, 474), (83, 1295, 273, 1485)),
+    ('kyle', 'review 3.jpeg', (18, 30, 981, 524), (64, 1332, 259, 1528)),
+]:
+    save(f'review-{name}-project', filename, photo_box)
+    save(f'review-{name}-avatar', filename, avatar_box)
+
 print(f'Prepared {len(list(destination.glob("*.webp")))} design assets.')

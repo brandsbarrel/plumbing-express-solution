@@ -6,5 +6,6 @@ import './artwork.css';
 import './services.css';
 import './header.css';
 import './promotions.css';
+import './reviews.css';
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);
