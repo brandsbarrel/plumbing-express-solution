@@ -14,7 +14,7 @@ export default function Hero() {
       <p>Servicing homes and business Sydney wide</p>
     </div>
     <a className="artwork-link hero-call-link" href={business.phoneHref} aria-label={`Call now ${business.phone}`} />
-    <a className="artwork-link hero-book-link" href="#contact" aria-label="Book a Service" />
+    <a className="artwork-link hero-book-link" href="/contact#get-in-touch" aria-label="Book a Service" />
     <a className="artwork-link hero-email-link" href={`mailto:${business.email}`} aria-label={`Email ${business.email}`} />
   </section>;
 }

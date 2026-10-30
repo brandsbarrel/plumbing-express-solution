@@ -8,5 +8,6 @@ import './header.css';
 import './promotions.css';
 import './reviews.css';
 import './services-intro.css';
+import './contact-page.css';
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);
