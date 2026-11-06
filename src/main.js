@@ -10,5 +10,6 @@ import './reviews.css';
 import './services-intro.css';
 import './contact-page.css';
 import './contact-refresh.css';
+import './home-bottom.css';
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);

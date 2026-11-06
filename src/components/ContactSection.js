@@ -1,9 +1,9 @@
 import { business } from '../data.js';
 
-export default function ContactSection() {
-  return <footer id="contact" className="design-footer" aria-labelledby="contact-title">
+export default function ContactSection({ home = false }) {
+  return <footer id="contact" className={`design-footer${home ? ' home-design-footer' : ''}`} aria-labelledby="contact-title">
     <div className="footer-artwork">
-      <img src="/assets/footer-complete.webp" alt="" width="941" height="1672" loading="lazy" />
+      <img src={home ? '/assets/home-footer.webp' : '/assets/footer-complete.webp'} alt="" width={home ? '998' : '941'} height={home ? '1576' : '1672'} loading="lazy" />
       <div className="sr-only">
         <p>Get in touch</p>
         <h2 id="contact-title">Book a Service Today</h2>
