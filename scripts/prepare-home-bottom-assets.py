@@ -1,4 +1,4 @@
-"""Prepare the supplied Home work-process, urgent-help, location and footer references."""
+"""Prepare Home photographs; work-process icons and water are rendered as SVG."""
 from pathlib import Path
 from PIL import Image
 
@@ -16,8 +16,4 @@ def save(filename, name, box=None):
 save('need urgent plumbing help.jpeg', 'home-urgent-help')
 save('location.jpeg', 'home-location-map')
 save('footer.jpeg', 'home-footer')
-save('below insta block.jpeg', 'work-process-top-water', (0, 0, 340, 185))
-save('below insta block.jpeg', 'work-process-bottom-water', (0, 1320, 1037, 1516))
-for index, y in enumerate([520, 726, 931, 1132], start=1):
-    save('below insta block.jpeg', f'work-step-{index}', (104, y, 250, y + 155))
-print('Prepared Home bottom section artwork and four work-process icons.')
+print('Prepared Home urgent-help, location and footer artwork.')

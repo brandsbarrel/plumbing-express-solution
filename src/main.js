@@ -11,5 +11,6 @@ import './services-intro.css';
 import './contact-page.css';
 import './contact-refresh.css';
 import './home-bottom.css';
+import './work-process.css';
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>);

@@ -1,0 +1,20 @@
+/* Layout proportions follow the 1037px-wide reference at every viewport width. */
+.home-work-process{container-type:inline-size;max-width:1037px;margin-inline:auto;padding:0;background:radial-gradient(ellipse at 0 45%,#d9f2ff 0%,transparent 55%),linear-gradient(#f3fbff,#ecf8ff);overflow:hidden;position:relative;isolation:isolate}
+.home-work-process .work-process-inner{max-width:none;margin:0;padding:8.7cqw 4.72cqw 20.8cqw;position:relative}
+.home-work-process .eyebrow{font-size:3.9cqw;letter-spacing:-.08cqw;font-weight:800;gap:4.6cqw;line-height:1.2}
+.home-work-process .eyebrow:before,.home-work-process .eyebrow:after{width:10.2cqw;height:.8cqw;border-radius:1cqw;background:#00ace8}
+.home-work-process .work-process-inner>h2{font-size:8.6cqw;line-height:1;letter-spacing:-.29cqw;margin:3.6cqw 0 2cqw;font-weight:850}
+.home-work-process .work-process-inner>h2 em:after{left:27%;right:0;bottom:-1.4cqw;height:1.4cqw;border-top-width:.75cqw;border-radius:50%;transform:rotate(-3deg)}
+.home-work-process .work-process-description{font-size:3.5cqw;line-height:1.25;font-weight:650;letter-spacing:-.08cqw;margin:2.8cqw 0 3.9cqw;color:#596079}
+.home-work-process .work-process-steps{gap:2.3cqw}
+.home-work-process .work-process-steps li{height:17.36cqw;min-height:0;padding:1.1cqw 2.8cqw 1.1cqw 5.2cqw;gap:2cqw;border-radius:4.8cqw;background:linear-gradient(115deg,#fff,#ffffffed);box-shadow:0 .7cqw 1.4cqw #173f6e26}
+.home-work-process .work-step-visual{width:20.6cqw;padding:0;flex-shrink:0}
+.home-work-process .work-step-icon{width:15.04cqw;height:15.04cqw;background:linear-gradient(130deg,#d5f0fc,#cdeafa);border-radius:50%;display:block}
+.home-work-process .work-step-icon>img{width:100%;height:100%;object-fit:contain;display:block}
+.home-work-process .work-step-number{top:.4cqw;right:.4cqw;width:5.8cqw;height:5.8cqw;border:.25cqw solid white;font-size:4.1cqw;line-height:1;background:#f50080;font-weight:800}
+.home-work-process .work-step-copy{border-left:.4cqw solid #a8e0f7;padding:0 0 0 3.3cqw;min-width:0}
+.home-work-process .work-step-copy h3{font-size:4.05cqw;line-height:1.12;letter-spacing:-.14cqw;font-weight:800;margin:0 0 1.25cqw}
+.home-work-process .work-step-copy p{font-size:3.2cqw;line-height:1.2;letter-spacing:-.09cqw;color:#535b70}
+.home-work-process .process-water{position:absolute;z-index:-1;bottom:0;left:0;display:block;width:100%;height:auto;pointer-events:none;transform:none}
+.home-work-process .process-water-top{top:0;bottom:auto;left:0;width:100%;height:auto;transform:none}
+@media(max-width:360px){.home-work-process .work-step-copy h3{font-size:4.2cqw}.home-work-process .work-step-copy p{font-size:3.4cqw}.home-work-process .work-process-steps li{height:auto;min-height:19cqw}}
