@@ -10,6 +10,10 @@
 .contact-page-hero-art{position:relative;order:1;z-index:0;inset:auto;width:100%;height:clamp(310px,63vw,760px);margin-top:12px;background-position:center 57%;background-size:cover;mask-image:linear-gradient(180deg,transparent,#000 12%)}
 .contact-quick-cards{grid-template-columns:repeat(2,minmax(0,1fr));max-width:920px;padding-top:20px}
 .contact-quick-card .contact-card-email{font-size:clamp(13px,1.5vw,19px)}
+.contact-card-artwork{position:relative;display:block;overflow:hidden;padding:0;border-radius:28px;background:transparent}
+.contact-card-artwork>img{display:block;width:100%;height:auto}
+.contact-card-artwork>a{position:absolute;inset:0;display:block;margin:0;border-radius:inherit}
+.contact-card-artwork>a:focus-visible{outline:3px solid #f50086;outline-offset:-5px}
 .contact-enquiry{position:relative;isolation:isolate;overflow:hidden;display:block;max-width:1040px;margin:12px auto 24px;padding:45px 7% 145px;border-radius:38px;background:radial-gradient(ellipse at 0 30%,#ceeeff 0%,transparent 45%),radial-gradient(ellipse at 100% 55%,#d9efff 0%,transparent 40%),#f5fbff}
 .contact-enquiry:before{content:'';position:absolute;z-index:-1;left:-5%;top:-120px;width:55%;height:200px;background:linear-gradient(135deg,#0059b8,#00bded);border-bottom:8px solid #fff;box-shadow:0 10px 0 #ee007e;transform:rotate(-23deg);border-radius:0 0 70% 0;pointer-events:none}
 .contact-enquiry:after{content:'';position:absolute;z-index:-1;bottom:-65px;left:-5%;width:110%;height:145px;border-radius:60% 40% 0 0;border-top:8px solid #72ddfa;background:linear-gradient(#06bbf4,#0073d8 70%);box-shadow:0 -3px 0 white,0 -9px 0 #b8f1ff;transform:rotate(-4deg);pointer-events:none}

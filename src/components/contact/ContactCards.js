@@ -1,10 +1,14 @@
 import { business } from '../../data.js';
-import Icon from '../Icon.js';
 
 export default function ContactCards() {
   return <section className="contact-quick-cards" aria-label="Ways to contact us">
-    <article className="contact-quick-card"><span className="contact-pink-icon"><Icon name="phone" /></span><h2>Call Us</h2><p>Speak to our friendly team<br /> for immediate assistance.</p><a href={business.phoneHref}>{business.phone}<span aria-hidden="true">›</span></a></article>
-    <article className="contact-quick-card"><span className="contact-pink-icon"><Icon name="mail" /></span><h2>Email Us</h2><p>Send us an enquiry and<br /> we’ll get back to you soon.</p><a className="contact-card-email" href={`mailto:${business.email}`}>{business.email}<span aria-hidden="true">›</span></a></article>
-
+    <article className="contact-quick-card contact-card-artwork">
+      <img src="/assets/contact-call-card.jpeg" alt="Call us. Speak to our friendly team for immediate assistance. 1800 951 942." width="1448" height="1086" />
+      <a href={business.phoneHref} aria-label={`Call ${business.phone}`} />
+    </article>
+    <article className="contact-quick-card contact-card-artwork">
+      <img src="/assets/contact-email-card.jpeg" alt={`Email us. Send us an enquiry and we'll get back to you soon. ${business.email}.`} width="1446" height="1087" />
+      <a href={`mailto:${business.email}`} aria-label={`Email ${business.email}`} />
+    </article>
   </section>;
 }

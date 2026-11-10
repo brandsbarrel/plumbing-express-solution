@@ -3,7 +3,7 @@ import { business } from '../data.js';
 export default function ContactSection() {
   return <footer id="contact" className="design-footer home-design-footer" aria-labelledby="contact-title">
     <div className="footer-artwork">
-      <img src="/assets/home-footer.webp" alt="" width="998" height="1576" loading="lazy" />
+      <img src="/assets/home-footer.jpeg" alt="" width="998" height="1576" loading="lazy" />
       <div className="sr-only">
         <p>Get in touch</p>
         <h2 id="contact-title">Book a Service Today</h2>
