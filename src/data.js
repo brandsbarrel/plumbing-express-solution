@@ -2,7 +2,7 @@ export const business = {
   name: 'Plumbing Express Solutions',
   phone: '1800 951 942',
   phoneHref: 'tel:1800951942',
-  email: 'info@plumbingexpresssolutions.com.au',
+  email: 'info@plumbingexpresssolutions.com',
 };
 
 export const services = [
