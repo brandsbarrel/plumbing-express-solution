@@ -14,6 +14,7 @@ export const services = [
   { id: 'hot-water', title: 'Hot Water Units', description: 'Supply, installation and repairs.' },
   { id: 'drains', title: 'Blocked Drains', description: 'Clear blockages and keep your drains flowing freely.' },
   { id: 'taps', title: 'Tap & Toilet Repairs', description: 'Fixing leaking taps, toilets and faulty fittings.' },
+  { id: 'excavation-drainage', title: 'Excavation and drainage', description: 'We carry out sewer inspections, drainage, and upgrades to prevent messy backups and keep your system running smoothly.' },
 ];
 
 export const benefits = [

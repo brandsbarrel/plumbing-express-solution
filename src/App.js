@@ -9,6 +9,7 @@ import InstagramReviews from './components/InstagramReviews.js';
 import ContactSection from './components/ContactSection.js';
 import ServicePage from './components/ServicePage.js';
 import ServicesIntro from './components/ServicesIntro.js';
+import ServicesPageHeader from './components/ServicesPageHeader.js';
 import ContactPage from './components/ContactPage.js';
 import WorkProcess from './components/WorkProcess.js';
 import HomeUrgentHelp from './components/HomeUrgentHelp.js';
@@ -22,5 +23,5 @@ export default function App() {
   const isHome = path === '/';
   const isContact = path === '/contact';
   document.title = `${service ? `${service.title} | ` : isServicesIndex ? 'Our Services | ' : isContact ? 'Contact Us | ' : ''}Plumbing Express Solutions | Plumbing done right.`;
-  return <><a className="skip-link" href="#main">Skip to content</a><Header /><main id="main">{isHome ? <><Hero /><TrustBanner /><Services /><DiscountBanner /><WhyChooseUs /><CustomerReviews /><InstagramReviews /><WorkProcess /><HomeUrgentHelp /><HomeLocation /></> : isContact ? <ContactPage /> : service ? <><ServicePage service={service} /><Services /></> : isServicesIndex ? <div className="services-index"><ServicesIntro /><Services /></div> : <section className="service-detail section-wrap"><h1>Page not found</h1><p>Please choose a service or return to the Home page.</p><a className="book-button" href="/">Back to Home</a></section>}<ContactSection /></main></>;
+  return <><a className="skip-link" href="#main">Skip to content</a><Header /><main id="main">{isHome ? <><Hero /><TrustBanner /><Services /><DiscountBanner /><WhyChooseUs /><CustomerReviews /><InstagramReviews /><WorkProcess /><HomeUrgentHelp /><HomeLocation /></> : isContact ? <ContactPage /> : service ? <><ServicePage service={service} /><Services /></> : isServicesIndex ? <div className="services-index"><ServicesPageHeader /><Services showHeading={false} /><ServicesIntro /><WorkProcess /><HomeUrgentHelp servicePage /></div> : <section className="service-detail section-wrap"><h1>Page not found</h1><p>Please choose a service or return to the Home page.</p><a className="book-button" href="/">Back to Home</a></section>}<ContactSection /></main></>;
 }
