@@ -8,10 +8,10 @@ export default function Services({ showHeading = true }) {
       <span id="services-title">Complete <em>Plumbing</em> Solutions</span>
     </SectionHeading>}
     <div className="services-grid">
-      {services.map(service => <a href={`/services/${service.id}`} className={`service-card service-${service.id}`} key={service.id} aria-label={`View ${service.title} service`}>
+      {services.map(service => <article className={`service-card service-${service.id}`} key={service.id}>
         <ServiceIcon service={service} className="service-card-icon" />
-        <div><h3>{service.title}</h3><p>{service.description}</p><span className="service-card-action" aria-hidden="true">View service <span>→</span></span></div>
-      </a>)}
+        <div><h3>{service.title}</h3><p>{service.description}</p></div>
+      </article>)}
     </div>
   </section>;
 }

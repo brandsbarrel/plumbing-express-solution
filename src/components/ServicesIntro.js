@@ -1,7 +1,15 @@
-const projects = [
+const originalProjects = [
   { id: 'bathroom', title: 'Bathroom Renovation', description: 'Modern finishes and expert installation.', alt: 'Completed bathroom renovation with a glass shower and vanity', icon: 'shower' },
   { id: 'drainage', title: 'Drainage / Pipe Repair', description: 'Fast, reliable repairs to keep your property flowing properly.', alt: 'New drainage pipe installed in an excavated trench', icon: 'wrench' },
   { id: 'shower', title: 'Shower Installation', description: 'Quality fittings and professional workmanship.', alt: 'New shower fittings installed in a white tiled shower', icon: 'shower' },
+];
+const additionalProjects = [
+  { image: 'project-kitchen.jpeg', alt: 'Kitchen plumbing installation' },
+  { image: 'project-bathroom-latest.jpeg', alt: 'Bathroom renovation' },
+  { image: 'project-toilet.jpeg', alt: 'Toilet installation and repairs' },
+  { image: 'project-water-tank.jpeg', alt: 'Water tank installation' },
+  { image: 'project-drainage-latest.jpeg', alt: 'Drainage and pipe upgrades' },
+  { image: 'project-excavation.jpeg', alt: 'Excavation and site works' },
 ];
 const benefits = [
   { id: 'response', title: 'Fast Response', description: 'When you need us most.' },
@@ -16,8 +24,8 @@ function ProjectIcon({ name }) {
 export default function ServicesIntro() {
   return <section className="services-intro section-wrap" aria-labelledby="services-intro-title">
     <div className="services-intro-heading"><p className="eyebrow">Our Latest Work</p><h1 id="services-intro-title">Real Plumbing Projects<br />Completed for <em>Local Homes</em><br />and Businesses</h1><p>Take a look at some of our recent plumbing work.<br className="projects-description-break" /> Quality solutions, happy customers, and lasting results.</p></div>
-    <div className="project-grid">{projects.map(project => <article className="project-card" key={project.id}><img className="project-photo" src={`/assets/project-${project.id}.webp`} alt={project.alt} width="270" height="461" /><div className="project-card-copy"><ProjectIcon name={project.icon} /><h2>{project.title}</h2><p>{project.description}</p></div></article>)}</div>
+    <div className="project-grid project-grid-existing">{originalProjects.map(project => <article className="project-card project-card-existing" key={project.id}><img className="project-photo" src={`/assets/project-${project.id}.webp`} alt={project.alt} width="270" height="461" loading="lazy" /><div className="project-card-copy"><ProjectIcon name={project.icon} /><h2>{project.title}</h2><p>{project.description}</p></div></article>)}</div>
+    <div className="project-grid project-grid-additional">{additionalProjects.map(project => <article className="project-card" key={project.image}><img className="project-photo" src={`/assets/${project.image}`} alt={project.alt} width="409" height="313" loading="lazy" /></article>)}</div>
     <div className="project-benefits">{benefits.map(benefit => <div className="project-benefit" key={benefit.id}><img src={`/assets/icon-${benefit.id}.webp`} alt="" width="90" height="90" /><div><h2>{benefit.title}</h2><p>{benefit.description}</p></div></div>)}</div>
-    <a className="explore-services-button" href="#services">Explore Our Services <span aria-hidden="true">→</span></a>
   </section>;
 }
