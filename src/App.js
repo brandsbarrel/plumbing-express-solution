@@ -13,6 +13,8 @@ import ContactPage from './components/ContactPage.js';
 import WorkProcess from './components/WorkProcess.js';
 import HomeUrgentHelp from './components/HomeUrgentHelp.js';
 import HomeLocation from './components/HomeLocation.js';
+import AppreciatedCustomers from './components/AppreciatedCustomers.js';
+import ContactLocation from './components/contact/ContactLocation.js';
 
 export default function App() {
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
@@ -20,5 +22,5 @@ export default function App() {
   const isHome = path === '/';
   const isContact = path === '/contact';
   document.title = `${isServicesIndex ? 'Our Services | ' : isContact ? 'Contact Us | ' : ''}Plumbing Express Solutions | Plumbing done right.`;
-  return <><a className="skip-link" href="#main">Skip to content</a><Header /><main id="main">{isHome ? <><Hero /><TrustBanner /><Services /><DiscountBanner /><WhyChooseUs /><CustomerReviews /><InstagramReviews /><WorkProcess /><HomeUrgentHelp /><HomeLocation /></> : isContact ? <ContactPage /> : isServicesIndex ? <div className="services-index"><ServicesPageHeader /><Services showHeading={false} /><ServicesIntro /><WorkProcess /><HomeUrgentHelp servicePage /></div> : <section className="service-detail section-wrap"><h1>Page not found</h1><p>Please return to the Home page.</p><a className="book-button" href="/">Back to Home</a></section>}<ContactSection /></main></>;
+  return <><a className="skip-link" href="#main">Skip to content</a><Header /><main id="main">{isHome ? <><Hero /><TrustBanner /><Services /><DiscountBanner /><WhyChooseUs /><CustomerReviews /><InstagramReviews /><WorkProcess /><HomeUrgentHelp /><HomeLocation /></> : isContact ? <ContactPage /> : isServicesIndex ? <div className="services-index"><ServicesPageHeader /><Services showHeading={false} /><ServicesIntro /><WorkProcess /><HomeUrgentHelp servicePage /><ContactLocation showMap={false} /><AppreciatedCustomers /></div> : <section className="service-detail section-wrap"><h1>Page not found</h1><p>Please return to the Home page.</p><a className="book-button" href="/">Back to Home</a></section>}<ContactSection /></main></>;
 }

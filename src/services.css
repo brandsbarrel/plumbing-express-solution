@@ -1,4 +1,5 @@
 .services-grid{grid-template-columns:repeat(8,minmax(0,1fr))}
+.services-index>.services{padding-top:0}.services-index>.services>.services-grid{margin-top:0}
 .service-card-icon{display:block;width:80px;height:80px;margin:0 auto 7px;border-radius:50%;flex-shrink:0}
 .services-grid>.service-card:last-child{grid-column:1/-1;justify-self:center;width:calc((100% - 84px)/8)}
 .service-taps{display:block}

@@ -13,7 +13,7 @@ const additionalProjects = [
 ];
 const benefits = [
   { id: 'response', title: 'Fast Response', description: 'When you need us most.' },
-  { id: 'licensed', title: 'Licensed Professionals', description: 'Qualified and experienced.' },
+  { id: 'licensed', title: 'Licenced Experts', description: 'Qualified and experienced.' },
   { id: 'quality', title: 'Quality Workmanship', description: 'Solutions built to last.' },
 ];
 
